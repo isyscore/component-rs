@@ -165,14 +165,10 @@ pub mod sdk {
             let url_lic = format!("http://{}:{}/api/license/read", self.lic_host, self.lic_port);
             let ret = self.http_get(&url_lic);
             self.lic_info = serde_json::from_str(&ret).unwrap();
-            println!("{:?}", self.lic_info);
             // 从云端获取组件的注册信息
             let url_comp = format!("http://license.isyscore.com:9990/api/license/cloud/component/one2?compName={}&compKey={}", self.component_name, self.component_key);
-            println!("{}", url_comp);
             let ret2 = self.http_get(&url_comp);
-            println!("{}", ret2);
             self.comp_info = serde_json::from_str(&ret2).unwrap();
-            println!("{:?}", self.comp_info);
 
             let tmp_comp_info = self.comp_info.clone();
             let tmp_comp_un = self.comp_info.clone().unwrap();
