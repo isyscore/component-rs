@@ -3,7 +3,7 @@ name = "compsdk"
 version = "1.0.0"
 authors = ["rarnu <hexj@isyscore.com>"]
 description = "isyscore component sdk"
-license = "Apache 2.0"
+license = "Apache License 2.0"
 documentation = "https://github.com/isyscore/component-rs/wiki"
 repository = "https://github.com/isyscore/component-rs"
 
