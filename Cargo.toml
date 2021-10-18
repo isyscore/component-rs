@@ -4,7 +4,7 @@ version = "1.0.0"
 authors = ["rarnu <hexj@isyscore.com>"]
 description = "isyscore component sdk"
 license = "Apache 2.0"
-documentation = ""
+documentation = "https://github.com/isyscore/component-rs/wiki"
 repository = "https://github.com/isyscore/component-rs"
 
 [dependencies]
