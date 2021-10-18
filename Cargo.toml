@@ -1,0 +1,14 @@
+[package]
+name = "compsdk"
+version = "1.0.0"
+authors = ["rarnu <hexj@isyscore.com>"]
+description = "isyscore component sdk"
+license = "Apache 2.0"
+license-file = ""
+documentation = ""
+repository = "https://github.com/isyscore/component-rs"
+
+[dependencies]
+serde = { version = "*", features = ["derive"] }
+serde_json = "*"
+reqwest = { version = "*", features = ["blocking"] }
